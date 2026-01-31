@@ -75,7 +75,7 @@ export function useCheckoutForm(product: IProduct) {
         setIsSubmitting(false);
       }
     },
-    [canSubmit]
+    [canSubmit, email]
   );
 
   const clearSubmitError = useCallback(() => setSubmitError(null), []);
