@@ -12,19 +12,18 @@ import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import FormHelperText from "@mui/material/FormHelperText";
 import Alert from "@mui/material/Alert";
-import type { IProduct } from "@/lib/types";
-import type { IPaymentMethod } from "@/lib/types";
+import type { IProduct, IPaymentMethod } from "@/lib/types";
 import { formatBRL } from "@/lib/format";
 import { ProductCard } from "@/components/ProductCard";
 import { OrderSummary } from "@/components/OrderSummary";
 import { SuccessDialog } from "@/components/SuccessDialog";
 import { useCheckoutForm } from "@/hooks/useCheckoutForm";
 
-interface CheckoutProps {
+interface ICheckoutProps {
   product: IProduct;
 }
 
-export function Checkout({ product }: CheckoutProps) {
+export function Checkout({ product }: Readonly<ICheckoutProps>) {
   const [successOpen, setSuccessOpen] = useState(false);
   const {
     email,
@@ -46,7 +45,7 @@ export function Checkout({ product }: CheckoutProps) {
     clearSubmitError,
   } = useCheckoutForm(product);
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement> ) => {
     handleSubmit(e, () => setSuccessOpen(true));
   };
 

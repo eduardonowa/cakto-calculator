@@ -1,5 +1,5 @@
 /// <reference types="jest" />
-import { render, screen } from "@testing-library/react";
+import { screen } from "@testing-library/react";
 import { Checkout } from "../Checkout";
 import { MOCK_PRODUCT } from "@/lib/product";
 import { renderWithTheme } from "./test-utils";

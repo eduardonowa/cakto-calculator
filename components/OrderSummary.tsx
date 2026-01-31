@@ -3,12 +3,12 @@ import FormHelperText from "@mui/material/FormHelperText";
 import type { IOrderSummaryDisplay } from "@/lib/types";
 import { formatBRL } from "@/lib/format";
 
-interface OrderSummaryProps {
+interface IOrderSummaryProps  {
   summary: IOrderSummaryDisplay;
   producerName: string;
 }
 
-function OrderSummaryInner({ summary, producerName }: OrderSummaryProps) {
+function OrderSummaryInner({ summary, producerName }: Readonly<IOrderSummaryProps>) {
   return (
     <section className="bg-white rounded-lg shadow p-4">
       <h3 className="text-base font-medium text-gray-900 mb-3">

@@ -2,7 +2,7 @@ import React from "react";
 import { render, type RenderOptions } from "@testing-library/react";
 import { ThemeProvider } from "../ThemeProvider";
 
-function AllProviders({ children }: { children: React.ReactNode }) {
+function AllProviders({ children }: Readonly<{ children: React.ReactNode }>) {
   return <ThemeProvider>{children}</ThemeProvider>;
 }
 

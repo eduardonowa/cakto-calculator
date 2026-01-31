@@ -1,9 +1,7 @@
 'use client';
 
 import { useCallback, useMemo, useState } from 'react';
-import type { IProduct } from '@/lib/types';
-import type { IPaymentMethod } from '@/lib/types';
-import type { IOrderSummaryDisplay } from '@/lib/types';
+import type { IProduct, IPaymentMethod, IOrderSummaryDisplay } from '@/lib/types';
 import { calcularParcelas, getPixSummary, getCardSummary } from '@/lib/fees';
 import { maskCpf, stripCpf, validateCpf } from '@/lib/cpf';
 

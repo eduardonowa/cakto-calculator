@@ -5,7 +5,7 @@ interface ProductCardProps {
   product: IProduct;
 }
 
-export function ProductCard({ product }: ProductCardProps) {
+export function ProductCard({ product }: Readonly<ProductCardProps>) {
   return (
     <section className="bg-white rounded-lg shadow p-4">
       <h2 className="text-lg font-semibold text-gray-900 mb-2">

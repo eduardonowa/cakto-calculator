@@ -5,7 +5,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import Button from "@mui/material/Button";
 
-interface SuccessDialogProps {
+interface ISuccessDialogProps {
   open: boolean;
   onClose: () => void;
   title?: string;
@@ -19,7 +19,7 @@ function SuccessDialogInner({
   title = "Compra realizada!",
   message = "Obrigado pela sua compra. Em breve você receberá as instruções de acesso por e-mail.",
   closeLabel = "Fechar",
-}: SuccessDialogProps) {
+}: Readonly<ISuccessDialogProps>) {
   return (
     <Dialog open={open} onClose={onClose}>
       <DialogTitle>{title}</DialogTitle>

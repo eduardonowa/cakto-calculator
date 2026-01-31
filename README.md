@@ -38,17 +38,6 @@ Para ver o fluxo de erro no submit, use o e-mail **`erro@teste.com`** e finalize
 
 ## Se tivesse mais tempo, o que você faria para aumentar a conversão deste checkout?
 
-## Features e melhorias adicionais (se tivesse mais tempo)
-
-- **Testes mais completos**: testes unitários mais focados em regras de negócio e interatividade, testes de integração e E2E com Cypress para simular fluxos reais.
-- **Fluxo de Git e releases**: branches por feature, commits semânticos.
-- **CI/CD e Dependabot**: pipelines no GitHub Actions para rodar lint, testes e build em PRs; Dependabot para atualizações de dependências.
-- **Documentação de componentes com Storybook**: criar catálogo de componentes e testes visuais/regressão para garantir consistência UI.
-- **Acessibilidade (a11y)**: auditorias (axe/Lighthouse), correções de foco e navegação por teclado, e testes com leitores de tela.
-- **Otimização de performance**: auditoria Lighthouse, otimização de imagens, lazy-loading, caching e tuning de SSR/ISR.
-- **Feature flags e experimentação**: suporte para A/B tests e rollout gradual de features.
-- **Internacionalização**: arquitetura para i18n (ex.: next-i18next) para suportar múltiplos idiomas.
-
 1. **Menos campos de uma vez e mais confiança**  
    Pediria só e-mail e forma de pagamento na primeira tela. CPF e cartão ficariam no passo seguinte ou num modal. A pessoa sente que já avançou. Selos de segurança, garantia de 7 dias e depoimentos curtos ajudariam a passar confiança.
 
@@ -60,3 +49,14 @@ Para ver o fluxo de erro no submit, use o e-mail **`erro@teste.com`** e finalize
 
 4. **Medir e testar**  
    Trackear entrada no checkout, abandono por etapa e método escolhido. Aí dá pra testar copy de botão, ordem dos pagamentos e mensagem de desconto no PIX, ajustando com base nos dados.
+
+## Features e melhorias adicionais (se tivesse mais tempo)
+
+- **Testes mais completos**: testes unitários mais focados em regras de negócio e interatividade, testes de integração e E2E com Cypress para simular fluxos reais.
+- **Fluxo de Git e releases**: branches por feature, commits semânticos.
+- **CI/CD e Dependabot**: pipelines no GitHub Actions para rodar lint, testes e build em PRs; Dependabot para atualizações de dependências.
+- **Documentação de componentes com Storybook**: criar catálogo de componentes e testes visuais/regressão para garantir consistência UI.
+- **Acessibilidade (a11y)**: auditorias (axe/Lighthouse), correções de foco e navegação por teclado, e testes com leitores de tela.
+- **Otimização de performance**: auditoria Lighthouse, otimização de imagens, lazy-loading, caching e tuning de SSR/ISR.
+- **Feature flags e experimentação**: suporte para A/B tests e rollout gradual de features.
+- **Internacionalização**: arquitetura para i18n (ex.: next-i18next) para suportar múltiplos idiomas.
