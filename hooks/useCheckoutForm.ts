@@ -63,6 +63,8 @@ export function useCheckoutForm(product: IProduct) {
           await submitFn();
         } else {
           await new Promise((r) => setTimeout(r, 1500));
+          console.log('email', email);
+          console.log('MOCK_ERROR_EMAIL', MOCK_ERROR_EMAIL);
           if (email === MOCK_ERROR_EMAIL) {
             throw new Error('Erro ao processar. Tente novamente.');
           }
@@ -75,7 +77,7 @@ export function useCheckoutForm(product: IProduct) {
         setIsSubmitting(false);
       }
     },
-    [canSubmit]
+    [canSubmit, email]
   );
 
   const clearSubmitError = useCallback(() => setSubmitError(null), []);
